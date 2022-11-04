@@ -2,5 +2,6 @@
 fetch('https://whatyearisit-backend-one.vercel.app/year')
 .then(res => res.json())
 .then(data =>{
-    document.querySelector('#year').textContent = data.year
+    let stringData = data.year+""
+    document.querySelector('#year').textContent = stringData
 })
